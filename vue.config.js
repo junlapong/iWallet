@@ -1,10 +1,10 @@
 module.exports = {
-    publicPath: '/',
+    publicPath: '/iWallet',
     configureWebpack: {
         module: {
             rules: [{
                 test: /\.json$/,
-                loader: 'json', // yarn add json-loader
+                //loader: 'json', // yarn add json-loader
             }]
         }
     }

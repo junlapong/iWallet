@@ -15,9 +15,9 @@
 
 <script>
 import Web3 from "web3";
-import Token from "./contract/Token.json";
-import Exchange from "./contract/Exchange.json";
-import ABI from "./contract/ABI.json";
+const Token = require("./contract/Token.json");
+const Exchange = require("./contract/Exchange.json");
+const ABI = require("./contract/ABI.json");
 
 const GAS_DECIMALS = 1000000000000000000; //Zero 18 digits
 const __web3__ = new Web3(window.ethereum);
