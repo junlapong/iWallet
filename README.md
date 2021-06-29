@@ -1,4 +1,4 @@
-# iwallet
+# iWallet
 
 ## Project setup
 ```
