@@ -16,7 +16,7 @@
 <script>
 import Web3 from "web3";
 import Token from "./contract/Token.json";
-import DEX from "./contract/DEX.json";
+import Exchange from "./contract/Exchange.json";
 import ABI from "./contract/ABI.json";
 
 const GAS_DECIMALS = 1000000000000000000; //Zero 18 digits
@@ -118,7 +118,7 @@ export default {
               wallet: this.wallet.address,
               token: Token[key],
               tokenPair: Token.Stablecoin.BUSD,
-              exchange: DEX.Twindex.Factory,
+              exchange: Exchange.Twindex.Factory,
             })
           )
       ).then((tokens) => (this.wallet.tokens = tokens));
